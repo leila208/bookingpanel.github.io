@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary: #53d56c;
+  --bgcolor: #f5f7fa;
+}
+.sidebar {
+  padding: 50px 20px;
+  background-color: #292d32;
+  width: 300px;
+  height: 100vh;
+}
+a.active {
+  color: var(--primary);
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.page p {
+  margin-left: 10px;
+  font: normal 400 20px "Poppins";
+}
+.page a {
+  color: #636a6f;
+  display: flex;
+  align-items: center;
+}
+.page span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #636a6f;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  font-size: 20px;
+  color: #fff;
+}
+a.active {
+  color: var(--primary);
+}
+a.active span {
+  background-color: var(--primary);
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.mainBody {
+  display: flex;
+}
+.staffPage {
+  background-color: var(--bgcolor);
+
+  width: 100%;
+}
+.servicePage {
+  background-color: var(--bgcolor);
+
+  width: 100%;
+}
+.confirmationPage {
+  background-color: var(--bgcolor);
+
+  width: 100%;
+}
+.datePage {
+  background-color: var(--bgcolor);
+  width: 100%;
+}
+.headingContainer {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #e3eaf3;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading p {
+  padding-top: 25px;
+  font: normal 600 20px "Poppins";
+  line-height: 27px;
+}
+.heading i {
+  color: #636a6f;
+}
+.doctors {
+  margin-top: 50px;
+}
+.doctor {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.services {
+  margin-top: 50px;
+}
+.service {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.doctor {
+  padding: 10px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+.serviceLeft {
+  display: flex;
+  align-items: center;
+}
+.service {
+  padding: 10px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+.doctorImage {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}
+.doctorImage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.serviceImage {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}
+.serviceImage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.doctorContent p:first-of-type {
+  font: normal 600 18px "Poppins";
+}
+.doctorContent p:last-of-type {
+  font: normal 400 14px "Poppins";
+  color: #828f9a;
+}
+.serviceContent p:first-of-type {
+  font: normal 600 18px "Poppins";
+}
+.serviceContent p:last-of-type {
+  font: normal 400 14px "Poppins";
+  color: #828f9a;
+}
+.btns {
+  margin-top: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+}
+.btns button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  font: normal 600 15px "Poppins";
+  line-height: 18px;
+  height: 40px;
+}
+#nextBtn {
+  background-color: #6c70dc;
+  color: #fff;
+}
+#confirmBtn {
+  background-color: #6c70dc;
+  color: #fff;
+}
+#back {
+  color: #8f9ca7;
+  border: 1px solid #8f9ca7;
+}
+.serviceRight p {
+  font: normal 600 30px "Poppins";
+  color: #4fbf65;
+}
+#alert-0 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #f4be6c;
+}
+#alert-1 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #f4be6c;
+}
+#alert-2 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #f4be6c;
+}
+.btns span {
+  font: normal 600 15px "Poppins";
+  margin-left: 10px;
+  line-height: 18px;
+}
+.exclamation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+/* //// */
+.mainDateContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.selectedDate {
+  width: 300px;
+  height: 330px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.timeHeading {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.mainCalendar {
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.calendarHeader {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: normal 600 16px "Poppins";
+}
+.icons i {
+  margin: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.calendar {
+  padding: 20px 20px 40px 20px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.calendar .weeks {
+  border-bottom: 1px solid #e3eaf3;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar ul li {
+  position: relative;
+  width: calc(100% / 7);
+  text-align: center;
+}
+.calendar .days li {
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.calendar .days li:before {
+  position: absolute;
+  content: "";
+  background-color: #ecedf1;
+
+  height: 40px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.days li span{
+  padding: 10px;
+}
+.days li.inactive {
+  color: #aaacaf;
+}
+.days li.activeDate:before {
+  background-color: #6c70dc;
+}
+.days li.activeDate {
+  color: #fff;
+}
+.weeks {
+  padding-bottom: 5px;
+}
+.weeks li {
+  font: normal 400 15px "Poppins";
+  color: #c8c9cc;
+}
+.timeText {
+  font: normal 400 15px "Poppins";
+  color: #6c70dc;
+  border-bottom: 1px solid #e3eaf3;
+}
+.hourBoxes {
+  width: 100%;
+}
+.hourBox {
+  cursor: pointer;
+  background-color: #eceff2;
+  width: 30%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hourBox p {
+  font: normal 500 16px "Poppins";
+}
+/* //confirmationPage */
+form label {
+  color: #292d32;
+  font: normal 500 18px "Poppins";
+}
+form span {
+  color: #ef264d;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.input {
+  width: 45%;
+  margin-top: 50px;
+}
+.input input {
+  margin-top: 15px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #e3eaf3;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+.mainConfirmation {
+  display: flex;
+  flex-direction: column;
+}
+.notes {
+  display: flex;
+  flex-direction: column;
+}
+.note {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.note p:first-of-type {
+  font: normal 400 18px "Poppins";
+  color: #6c70dc;
+}
+.note p:last-of-type {
+  margin-left: 5px;
+  font: normal 400 18px "Poppins";
+  color: #111111;
+}
+.noteHeading {
+  margin: 20px 0;
+}
+.noteHeading p {
+  font: normal 400 18px "Poppins";
+}
+.noteContent {
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.page span {
+  text-align: center;
+}
+.check-icon {
+  background-color: #6c70dc !important;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+}
+.modal-content p {
+  font: normal 500 24px "Poppins";
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 34px;
+}
+.green {
+  border: 2px solid #53d56c;
+}
+.borderNone {
+  border: none;
+}
+
+
+.days li.selectable:before {
+  color:#000;
+}
+
+.selected{
+  background-color: #6c70dc;
+  color: #fff;
+}
+.hourBoxes{
+  display: flex;
+  gap: 5px;
+
+}
+
+.bggreen{
+  color: #fff;
+  background-color: #53d56c;
+}
